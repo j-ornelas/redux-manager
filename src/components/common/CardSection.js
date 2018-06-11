@@ -3,7 +3,10 @@ import { View } from 'react-native';
 
 const CardSection = (props) => {
   return (
-    <View style={styles.containerStyle}>
+    // this syntax is pretty cool. it uses the module styles
+    // ( left argument ) and overrides them with any prop styles
+    // ( right argument)
+    <View style={[styles.containerStyle, props.style]}>
       {props.children}
     </View>
   );
@@ -16,9 +19,9 @@ const styles = {
     backgroundColor: '#fff',
     justifyContent: 'flex-start',
     flexDirection: 'row',
-    borderColor: '#fff',
+    borderColor: 'whitesmoke',
     position: 'relative',
-  }
+  },
 };
 
 export { CardSection };

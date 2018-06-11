@@ -44,3 +44,19 @@ export default (state = INITIAL_STATE, action) => {
       return state;
   }
 };
+
+
+
+
+/*
+boilerplate reducer:
+const INITIAL_STATE = {};
+
+export default (state = INITIAL_STATE, action) => {
+  switch (action.type) {
+    // insert actions here vvv
+    default:
+      return state;
+  }
+};
+*/
